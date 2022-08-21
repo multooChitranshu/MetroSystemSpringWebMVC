@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Metro System</title>
+</head>
+<body>
+<h1>Metro System</h1><br><br>
+<h2>New Card Registration</h2>
+<hr>
+<form action="./saveCard" method="post">
+Enter Aadhar-Card ID : <input type="number" name="aadharID"><br><br>
+<input type="submit" value="Add Card"><br>
+</form>
+<h3 th:text="${message}" ></h3><br>
+
+<a href="/">Go back to Main Page</a>
+</body>
+</html>

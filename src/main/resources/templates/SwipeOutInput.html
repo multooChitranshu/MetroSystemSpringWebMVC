@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Swipe In</title>
+</head>
+<body>
+<h1>Metro System</h1>
+<hr>
+<h2>Swipe Out:</h2><br>
+<form action="/swipeOut/Input" method="post">
+Choose Station : <select name="stationName">
+<option th:each="station:${allStations}" th:value="${station}" th:label="${station}"></option>
+</select><br><br>
+<input type="submit" value="Swipe Out"><br>
+</form>
+<br><br>
+<a href="./">Go to Main Page</a><br><br>
+<a href="/logout">!!! Sign Out !!!</a>
+
+</body>
+</html>

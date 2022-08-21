@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Metro Station Menu</title>
+</head>
+<body>
+<h1>Metro System</h1>
+<hr>
+<h2 th:text="'Welcome! Card ID: '+${session.card.cardID}+' is logged in.'"></h2>
+<hr>
+<h2>Please choose from these:</h2>
+<a href="/swipeIn">Swipe In</a><br><br>
+<a href="/checkBalance">Check balance</a><br><br>
+<a href="/rechargeCard">Recharge Card</a><br><br>
+<a href="/showAllPreviousTransactions">Show all previous transactions</a><br><br>
+<a href="/logout">!!! Sign Out !!!</a>
+<h2 th:text="${message}"></h2>
+
+</body>
+</html>
